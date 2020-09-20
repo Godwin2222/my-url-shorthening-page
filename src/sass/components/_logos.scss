@@ -1,0 +1,8 @@
+.logo {
+  width: 121px;
+  height: 33px;
+  background: url('../assets/images/logo.svg') center no-repeat;
+  @include media(display3) {
+    margin-right: 40px;
+  }
+}

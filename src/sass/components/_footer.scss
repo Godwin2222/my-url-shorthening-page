@@ -1,0 +1,81 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 55px 20px 40px 20px;
+  align-items: center;
+  text-align: center;
+  background-color: $very-dark-color;
+  @include media(display3) {
+    flex-direction: row;
+    height: 310px;
+    padding: 70px 40px 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.logo--footer {
+  margin-bottom: 15px;
+  filter: brightness(0) invert(1);
+  @include media(display3) {
+    margin-right: 165px;
+  }
+}
+
+.info-links {
+  margin-top: 34px;
+  ul {
+    margin-top: 15px;
+    li {
+      padding: 5px 0;
+      font-size: .95em;
+      a {
+        opacity: .5;
+        color: white;
+        &:active {
+          opacity: 1;
+          color: $secundary-color;
+        }
+        @include media(display3) {
+          &:hover {
+            cursor: pointer;
+            opacity: 1;
+            color: $secundary-color;
+          }
+        }
+      }
+    }
+  }
+  @include media(display3) {
+    margin-top: 0;
+  }
+}
+
+.title--info-links {
+  font-size: .95em;
+  color: white;
+}
+
+.social {
+  display: flex;
+  width: 175px;
+  margin: 35px 0 10px 0;
+  justify-content: space-between;
+  font-size: 26px;
+  a {
+    color: white;
+    &:active {
+      color: $secundary-color;
+    }
+    @include media(display3) {
+      &:hover {
+        cursor: pointer;
+        color: $secundary-color;
+      }
+    }
+  }
+  @include media(display3) {
+    margin-top: 0;
+  }
+}
